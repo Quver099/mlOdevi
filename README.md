@@ -6,10 +6,10 @@
 ---
 
 ## 1. Problem Tanımı
-Bu çalışmanın amacı, bir şehir caddesindeki trafik yoğunluğunu modellemek için Poisson dağılımını kullanmaktırVerilen trafik verileri üzerinden En Çok Olabilirlik (Maximum Likelihood Estimation - MLE) yöntemiyle trafik yoğunluğu parametresi ($\lambda$) tahmin edilmiş ve bu parametrenin şehir planlama kararlarına etkileri analiz edilmiştir[cite: 103, 144].
+Bu çalışmanın amacı, bir şehir caddesindeki trafik yoğunluğunu modellemek için Poisson dağılımını kullanmaktırVerilen trafik verileri üzerinden En Çok Olabilirlik (Maximum Likelihood Estimation - MLE) yöntemiyle trafik yoğunluğu parametresi ($\lambda$) tahmin edilmiş ve bu parametrenin şehir planlama kararlarına etkileri analiz edilmiştir.
 
 ## 2. Kullanılan Veri ve Yöntem
-* **Veri:** 1 dakikalık zaman dilimlerinde caddeden geçen araç sayıları[cite: 102].
+* **Veri:** 1 dakikalık zaman dilimlerinde caddeden geçen araç sayıları.
 * **Yöntem:**
     * Poisson dağılımı için olabilirlik fonksiyonunun logaritması alınarak analitik türetme yapılmıştır.
     * Negatif Log-Olabilirlik (NLL) fonksiyonu `scipy.optimize` kütüphanesi kullanılarak sayısal olarak minimize edilmiştir.
